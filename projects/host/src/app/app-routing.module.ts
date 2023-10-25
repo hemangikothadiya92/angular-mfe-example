@@ -8,14 +8,14 @@ const routes: Routes = [
     component: AdminComponent,
   },
   {
-    path: 'mfe1',
+    path: 'employee',
     loadChildren: () =>
-      import('remoteapp1/homeModule').then((module) => module.HomeModule),
+      import('employeeMFE/homeModule').then((module) => module.HomeModule),
   },
   {
-    path: 'mfe2',
+    path: 'project',
     loadChildren: () =>
-      import('remoteapp2/homeModule').then((module) => module.HomeModule),
+      import('projectMFE/homeModule').then((module) => module.HomeModule),
   },
 ];
 

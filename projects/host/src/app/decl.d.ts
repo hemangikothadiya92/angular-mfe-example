@@ -1,2 +1,2 @@
-declare module 'remoteapp1/homeModule';
-declare module 'remoteapp2/homeModule';
+declare module 'employeeMFE/homeModule';
+declare module 'projectMFE/homeModule';

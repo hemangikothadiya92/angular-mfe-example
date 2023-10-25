@@ -1,4 +1,13 @@
-<h1>ANGULAR MFE EXAMPLE</h1>
-<a routerLink="/mfe1">REMOTE 1</a> &nbsp;
-<a routerLink="/mfe2">REMOTE 2</a>
-<router-outlet></router-outlet>
+<!-- <h1>ANGULAR MFE EXAMPLE</h1>
+<a routerLink="/employee">Employee MFE</a> &nbsp;
+<a routerLink="/project">Project MFE</a> -->
+<mat-toolbar color="primary">
+    <span class="appName">Angular MicroFrontend POC</span>
+    <a routerLink="/employee" style="padding-left: 10px;"><span>Employee MFE</span></a>
+    <a routerLink="/project" style="padding-left: 10px;"><span>Project MFE</span></a>
+  </mat-toolbar>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  
+  
