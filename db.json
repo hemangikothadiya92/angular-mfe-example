@@ -1,0 +1,135 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employee": [
+    {
+      "employeeId": "1",
+      "firstName": "John",
+      "lastName": "smith",
+      "email": "john.smith@mail.com",
+      "mobile": "9089706010",
+      "address": "abc street",
+      "active": true,
+      "id": 1
+    },
+    {
+      "employeeId": "",
+      "firstName": "marry",
+      "lastName": "josh",
+      "email": "marry@mail.com",
+      "mobile": "9876543210",
+      "address": "abc street",
+      "active": true,
+      "id": 2
+    },
+    {
+      "employeeId": "",
+      "firstName": "vens",
+      "lastName": "stone",
+      "email": "vens@gmail.com",
+      "mobile": "9876543210",
+      "address": "xyz street",
+      "active": false,
+      "id": 3
+    },
+    {
+      "employeeId": "",
+      "firstName": "bren",
+      "lastName": "stone",
+      "email": "bren@yahoo.com",
+      "mobile": "8877665542",
+      "address": "strye street",
+      "active": true,
+      "id": 4
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "projectId": "",
+      "projectName": "Test",
+      "projectDescription": "testing"
+    },
+    {
+      "projectId": "",
+      "projectName": "retail",
+      "projectDescription": "retail project",
+      "id": 2
+    },
+    {
+      "projectId": "",
+      "projectName": "MOC",
+      "projectDescription": "MOC project",
+      "id": 3
+    }
+  ],
+  "employeeprojectdatamapping": [
+    {
+      "employeeId": "",
+      "firstName": "marry",
+      "lastName": "josh",
+      "email": "marry@mail.com",
+      "mobile": "9876543210",
+      "address": "abc street",
+      "active": true,
+      "id": 2,
+      "projectDetails": {
+        "id": 1,
+        "projectId": "",
+        "projectName": "Test",
+        "projectDescription": "testing"
+      }
+    },
+    [
+      {
+        "employeeId": "1",
+        "firstName": "John",
+        "lastName": "smith",
+        "email": "john.smith@mail.com",
+        "mobile": "9089706010",
+        "address": "abc street",
+        "active": true,
+        "id": 1,
+        "projectDetails": {
+          "projectId": "",
+          "projectName": "MOC",
+          "projectDescription": "MOC project",
+          "id": 3
+        }
+      }
+    ],
+    [
+      {
+        "employeeId": "",
+        "firstName": "bren",
+        "lastName": "stone",
+        "email": "bren@yahoo.com",
+        "mobile": "8877665542",
+        "address": "strye street",
+        "active": true,
+        "id": 4,
+        "projectDetails": {
+          "id": 1,
+          "projectId": "",
+          "projectName": "Test",
+          "projectDescription": "testing"
+        }
+      }
+    ]
+  ]
+}

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  employee: 'http://localhost:5000/remoteEntry.js',
+  project: 'http://localhost:5001/remoteEntry.js'
 };
 
 /*

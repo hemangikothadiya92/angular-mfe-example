@@ -36,10 +36,10 @@ module.exports = {
       // },
 
       // For hosts (please adjust)
-      remotes: {
-        employeeMFE: "http://localhost:5000/remoteEntry.js",
-        projectMFE: "http://localhost:5001/remoteEntry.js",
-      },
+      // remotes: {
+      //   employeeMFE: "http://localhost:5000/remoteEntry.js",
+      //   projectMFE: "http://localhost:5001/remoteEntry.js",
+      // },
 
       shared: share({
         "@angular/core": {
