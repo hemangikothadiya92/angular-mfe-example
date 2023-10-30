@@ -22,8 +22,8 @@ const routes: Routes = [
       loadRemoteModule({
         type: 'module',
         remoteEntry: environment.employee,
-        exposedModule: 'HomeModule',
-      }).then((m) => m.HomeModule),
+        exposedModule: 'EmployeeModule',
+      }).then((m) => m.EmployeeModule),
 
   },
   {
@@ -42,15 +42,20 @@ const routes: Routes = [
       loadRemoteModule({
         type: 'module',
         remoteEntry: environment.project,
-        exposedModule: 'HomeModule',
-      }).then((m) => m.HomeModule),
+        exposedModule: 'ProjectModule',
+      }).then((m) => m.ProjectModule),
 
   },
-  // {
-  //   path: 'project',
-  //   loadChildren: () =>
-  //     import('projectMFE/homeModule').then((module) => module.HomeModule),
-  // },
+  {
+    path: 'assign-project',
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: environment.project,
+        exposedModule: 'AssignProjectModule',
+      }).then((m) => m.AssignProjectModule),
+
+  }
 ];
 
 @NgModule({
